@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  opacity: 0.9;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 15%);
+}
+.container {
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1152px;
+  }
+}
+
+a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* =============== UTILLITY CLASSES =============== */
+
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-baseline {
+  align-items: baseline;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.text-center {
+  text-align: center;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.gap-34 {
+  gap: 34px;
+}
+.section__header-heading {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.808);
+  font-size: 43px;
+  margin-top: 10rem;
+  font-weight: bolder;
+}
+
+.section__header-paragraph {
+  font-size: 18px;
+  color: hsl(210, 10%, 33%);
+  text-align: center;
+  max-width: 570px;
+  margin: 30px auto 0 auto;
+  font-weight: 400;
+}
+
+.gap-9 {
+  gap: 9px;
+}
+.gap-5 {
+  gap: 5rem;
+}
+.ml--10 {
+  margin-left: -40px;
+}
+.btn {
+  color: white;
+  width: 200px;
+  max-width: 200px;
+  height: 45px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+/* ========= HEADER======== */
+
+.header__logo {
+  margin-top: 40px;
+}
+
+.btn__ios {
+  background-color: hsl(171, 66%, 44%);
+}
+.btn__mac {
+  background-color: hsl(233, 100%, 69%);
+}
+
+.btn__ios:hover {
+  border-bottom: 2px solid hsl(171, 80%, 52%);
+}
+.btn__mac:hover {
+  border-bottom: 2px solid hsl(233, 93%, 54%);
+}
+
+/* =======HERO====== */
+
+
+.hero__text-wrapper {
+  max-width: 100%;
+}
+
+.hero-features-paragraph {
+  color: hsl(210, 10%, 33%);
+  margin-top: 20px;
+  line-height: 1.6;
+
+  font-size: 18px;
+}
+
+/* access-anywhere */
+.gap-24 {
+  gap: 24px;
+}
+.img__wrapper {
+  text-align: center;
+  margin-top: 90px;
+}
+
+.card {
+  max-width: 100%;
+}
+
+.card__description {
+  color: hsl(210, 10%, 33%);
+  margin-top: 10px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* footer */
+
+.footer {
+  background-color: hsl(195, 7%, 89%);
+  height: 100px;
+}
+
+.footer-logo {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.icon {
+  cursor: pointer;
+}
+.icon:hover {
+  filter: invert(18%) sepia(90%) saturate(688%) hue-rotate(130deg)
+    brightness(110%) contrast(80%);
+}
+
+@media (max-width: 992px) {
+  body {
+    background-image: url(./images/bg-header-mobile.png);
+    background-size: contain;
+  }
+  .btn__wrapper {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .btn {
+    margin-top: 10px;
+  }
+  .section__header-heading {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+  .hero__main,
+  .cards__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__image-wrapper {
+    margin-left: 0;
+  }
+  .hero__cards {
+    gap: 3rem;
+  }
+  .img__wrapper {
+    margin-top: 40px;
+  }
+  .wrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+  }
+
+  .gap-9 {
+    gap: 29px;
+  }
+  .card {
+    margin-top: 30px;
+    gap: 9px;
+  }
+  .card__description {
+    margin-top: 0px;
+  }
+  .footer {
+    height: auto;
+    flex-direction: column;
+    padding: 60px;
+  }
+  .links,
+  .link {
+    flex-direction: column;
+    gap: 29px;
+  }
+  
+  .icons {
+    margin-top: 29px;
+  }
+}
